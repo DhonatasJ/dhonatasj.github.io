@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    margin: 0px 2px;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+p {
+    font-size: 18px;
+}
+
+html {
+    font-family: 'Fira Code';
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.container {
+    position: relative;
+    padding: 5rem 5rem;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    border-radius: 360px;
+    padding: 2px;
+    margin-left: 1rem;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.topics_link {
+    text-decoration: none;
+    font-size: 24px;
+    padding: 1rem;
+    color: rgb(76, 4, 103);
+    font-weight: 700;
+    width: max-content;
+    white-space: nowrap;
+    height: 100%;
+}
+
+.topics_link:hover {
+    background-color: rgb(76, 4, 103);
+    color: white;
+    transition-duration: 0.3s;
+
+}
+
+.icon {
+    width: 40px;
+    margin-left: 6px;
+    filter: sepia(50%);
+}
+
+.socials {
+    position: fixed;
+    bottom: 40%;
+    transform: translateY(40%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transform: translateX(-220px);
+
+}
+
+.socials:hover {
+    z-index: 2;
+}
+
+
+.socials a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 190px;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    padding: 5px 7px;
+    border-radius: 0px 10px 10px 0px;
+    transition: 0.4s;
+    position: relative;
+    margin-left: 7px;
+
+}
+
+.socials a:hover {
+    transform: translateX(128px);
+}
+
+.intro {
+    color: rgb(255, 255, 255);
+    background-color: rgb(76, 4, 103);
+    justify-content: space-between;
+    width: 400px;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.intro h1 {
+    font-size: 40px;
+    width: 100%;
+}
+
+.avatar {
+    border-radius: 360px;
+    float: right;
+    flex-shrink: unset;
+
+}
+
+.intro a {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 3px 15px;
+    border-radius: 5px;
+    gap: 10px;
+    color: black;
+    background: white;
+    width: min-content;
+}
+
+.intro a:hover img {
+    transform: rotate(90deg);
+}
+
+.intro-inline {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.intro img {
+    width: 22px;
+    transition: 0.3s;
+}
+
+.intro span {
+    float: left;
+    font-size: 22px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.about-me p {
+    background-color: rgb(76, 4, 103);
+    width: 800px;
+    margin: 10px;
+    margin-left: 20px;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#section h2 {
+    margin-top: 3rem;
+    margin-left: 24.3rem;
+}
+
+.portifolio {
+    padding: 1rem;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-l1 {
+    height: 410px;
+    border-radius: 10px 10px 0px 10px;
+    box-shadow: 2px 1px 2px white;
+    width: 340px;
+    flex-direction: column;
+    display: flex;
+    border: 1px solid rgb(76, 4, 103);
+}
+
+.section-port {
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    padding-top: 3rem;
+}
+
+.container-port {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-tt {
+    margin-left: 2rem;
+}
+
+.div-img {
+    overflow: hidden;
+}
+
+.port {
+    height: 4rem;
+    width: 2px;
+}
+
+.footer {
+    background-color: aliceblue;
+    color: black;
+    margin-top: auto;
+    border-radius: 0 0 0 10px;
+    width: 100%;
+}
+
+.demo {
+    margin: 0px;
+    width: 50%;
+    height: 28px;
+    float: left;
+    display: flex;
+    border-radius: 0 0 0 10px;
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    justify-content: center;
+    font-family: Aria;
+    margin-top: 8px;
+}
+
+.footer a:hover {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: solid;
+    font-size: 25px;
+    transition-duration: 0.3s;
+}
+
+.descrip {
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    z-index: 1;
+}
+
+.skills-l1 {
+    height: 200px;
+    border-radius: 10px 10px 0px 10px;
+    box-shadow: 2px 1px 1px white;
+    width: 340px;
+    flex-direction: column;
+    display: flex;
+}
+
+#contact {
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 400px;
+    border: 2px solid;
+    border-radius: 10px;
+    display: block;
+    overflow: hidden;
+}
+
+#contact input {
+    font-size: 16px;
+    font-family: Verdana;
+}
+
+.input-person {
+    width: 100%;
+    height: 25px;
+    margin-top: 0.5rem;
+}
+
+.container-ctt {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.input-msg {
+    width: 400px;
+    height: 200px;
+    margin-top: 0.5rem;
+
+}
+
+
+.img-in-div {
+    width: 100%;
+    padding: 2rem;
+    margin: auto;
+}
+
+.html-img {
+    overflow: hidden;
+    width: 140px;
+    margin: auto;
+    margin-bottom: 22px;
+}
+
+.text-habili {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: Verdan;
+    background-color: rgb(76, 4, 103);
+    border-radius: 0 6px 0 0;
+    margin-top: 2px;
+}
+
+
+.css-img {
+    overflow: hidden;
+    width: 99px;
+    margin: auto;
+    margin-bottom: 22px;
+}
+
+
+
+.py-img {
+    overflow: hidden;
+    width: 125px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#message {
+    width: 100%;
+    font-size: 20px;
+
+}
+
+#btn {
+    width: 100px;
+    height: 30px;
+    float: right;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.mysql-img {
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.java-img {
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 240px;
+}
+
+.git-img {
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 120px;
+}
