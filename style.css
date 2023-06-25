@@ -6,19 +6,22 @@
 
 }
 
-p {
-    font-size: 18px;
-}
-
 html {
     font-family: 'Fira Code';
     scroll-behavior: smooth;
 }
 
 body {
+    background-color: burlywood;
+    width: 100vw;
+    height: 100vh;
     margin: 0px;
     background-color: rgb(0, 0, 0);
     color: white;
+}
+
+p {
+    font-size: 18px;
 }
 
 .container {
@@ -29,7 +32,6 @@ body {
 .logo {
     width: 55px;
     height: 55px;
-    border-radius: 360px;
     padding: 2px;
     margin-left: 1rem;
 }
@@ -43,9 +45,9 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
+    position: relative;
+    width: 100vw;
+    z-index: 1200;
     overflow: hidden;
 }
 
@@ -80,7 +82,7 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    transform: translateX(-220px);
+    transform: translateX(-225px);
 
 }
 
@@ -103,11 +105,11 @@ h2 {
     transition: 0.4s;
     position: relative;
     margin-left: 7px;
-
+    padding-left: 10px;
 }
 
 .socials a:hover {
-    transform: translateX(128px);
+    transform: translateX(130px);
 }
 
 .intro {
@@ -190,27 +192,19 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.portfolio-l1 {
-    height: 410px;
-    border-radius: 10px 10px 0px 10px;
-    box-shadow: 2px 1px 2px white;
-    width: 340px;
-    flex-direction: column;
-    display: flex;
-    border: 1px solid rgb(76, 4, 103);
-}
-
-.section-port {
-    max-width: 1170px;
-    margin: 0 auto;
-    margin-top: 4rem;
-    padding-top: 3rem;
-}
-
 .container-port {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.portfolio-l1 {
+    height: 410px;
+    border-radius: 10px 10px 0px 10px;
+    width: 340px;
+    flex-direction: column;
+    display: flex;
+    border: 1px solid rgb(76, 4, 103);
 }
 
 .container-tt {
@@ -274,9 +268,7 @@ h2 {
 }
 
 #contact {
-    margin-top: 3rem;
-    padding: 1rem;
-    width: 400px;
+    padding: 12rem;
     border: 2px solid;
     border-radius: 10px;
     display: block;
@@ -294,11 +286,6 @@ h2 {
     margin-top: 0.5rem;
 }
 
-.container-ctt {
-    max-width: 1100px;
-    margin: 0 auto;
-    margin-top: 4rem;
-}
 
 .input-msg {
     width: 400px;
@@ -306,7 +293,6 @@ h2 {
     margin-top: 0.5rem;
 
 }
-
 
 .img-in-div {
     width: 100%;
@@ -338,8 +324,6 @@ h2 {
     margin: auto;
     margin-bottom: 22px;
 }
-
-
 
 .py-img {
     overflow: hidden;
@@ -381,4 +365,247 @@ h2 {
     margin: auto;
     margin-bottom: 20px;
     width: 120px;
+}
+
+
+
+@media screen and (min-width: 1440px) {
+    #contact {
+        margin-top: 3rem;
+        padding: 1rem;
+        width: 720px;
+        border: 2px solid;
+        border-radius: 10px;
+        display: block;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    #contact input {
+        height: 30px;
+        font-size: 16px;
+        font-family: Verdana;
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .portifolio {
+        padding: 1rem;
+        gap: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contact {
+        margin-top: 3rem;
+        padding: 1rem;
+        width: 720px;
+        border: 2px solid;
+        border-radius: 10px;
+        display: block;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    #contact input {
+        height: 30px;
+        font-size: 16px;
+        font-family: Verdana;
+    }
+    .title-port{
+        margin-top: 4rem;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .portifolio {
+        padding: 1rem;
+        gap: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contact {
+        padding: 1rem;
+        width: 620px;
+        border: 2px solid;
+        border-radius: 10px;
+        display: block;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    #contact input {
+        height: 30px;
+        font-size: 16px;
+        font-family: Verdana;
+    }
+
+    .about-me p {
+        background-color: rgb(76, 4, 103);
+        width: 600px;
+        margin: 10px;
+        margin-left: 20px;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .portfolio-l1 {
+        margin-top: 2rem;
+        height: 410px;
+        border-radius: 10px 10px 0px 10px;
+        width: 340px;
+        flex-direction: column;
+        display: flex;
+        border: 1px solid rgb(76, 4, 103);
+    }
+
+    .title-port{
+        margin-top: 4rem;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .portifolio {
+        padding: 1rem;
+        gap: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contact {
+        margin-top: 3rem;
+        padding: 1rem;
+        width: 720px;
+        border: 2px solid;
+        border-radius: 10px;
+        display: block;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    #contact input {
+        height: 30px;
+        font-size: 16px;
+        font-family: Verdana;
+    }
+    .title-port{
+        margin-top: 4rem;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .portifolio {
+        padding: 1rem;
+        gap: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #contact {
+        margin-top: 3rem;
+        padding: 1rem;
+        width: 220px;
+        border: 2px solid;
+        border-radius: 10px;
+        display: block;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    #contact input {
+        height: 30px;
+        font-size: 16px;
+        font-family: Verdana;
+    }
+    .title-port{
+        margin-top: 4rem;
+    }
+
+    .intro-inline {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        height: 400px;
+    }
+    
+    .about-me p {
+        background-color: rgb(76, 4, 103);
+        width: 200px;
+        margin: 10px;
+        margin-left: 20px;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .avatar {
+        border-radius: 360px;
+        float: right;   
+        flex-shrink: unset;
+        width: 150px;
+        height: 150px;
+    }
+
+    .intro {
+        color: rgb(255, 255, 255);
+        background-color: rgb(76, 4, 103);
+        justify-content: space-between;
+        width: max-content;
+        border-radius: 10px;
+        margin: 5.3rem 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+    }
+    
+    .intro h1 {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .intro h2{
+        font-size: 20px;
+    }
+    
+    .intro p{
+        font-size: 15px;
+    }
+
+    .intro img{
+        width: 10px;
+    }
+
+    .intro a {
+        height: 20px;
+        display: flex;
+        align-items: center;
+        padding: 3px 15px;
+        border-radius: 5px;
+        gap: 10px;
+        color: black;
+        background: white;
+        width: 120px;
+        overflow: hidden;
+    }
+
+    #name-port{
+        font-size: 14px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+    .about-me p {
+        background-color: rgb(76, 4, 103);
+        width: 250px;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    
 }
