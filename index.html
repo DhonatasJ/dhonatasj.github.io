@@ -13,14 +13,20 @@
 </head>
 
 <body>
-    <header class="header">
+
+    <header id="header" class="header">
         <img src="img/logo.PNG" class="logo" alt="logo of page failed.">
         <div class="topics">
-            <a class="topics_link" href="#home">HOME</a>
-            <a class="topics_link" href="#about">ABOUT ME</a>
-            <a class="topics_link" href="#portifolio">PORTFOLIO</a>
-            <a class="topics_link" href="#skills">SKILLS</a>
-            <a class="topics_link" href="#link-contact">CONTACT</a>
+            <a class="menu" id="topics_link" href="#home">HOME</a>
+            <a class="item" id="topics_link" href="#about">ABOUT ME</a>
+            <a class="item" id="topics_link" href="#portfolio">PORTFOLIO</a>
+            <a class="item" id="topics_link" href="#skills">SKILLS</a>
+            <a class="item" id="topics_link" href="#link-contact">CONTACT</a>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
     </header>
     <br>
@@ -55,8 +61,8 @@
                 ways of working with these technologies, as a Front-End , Back-End, DevOps, DBA and several other
                 possibilities and it was I realized that the lines of code were not as complex as in the movies.</p>
         </div>
-
-        <section id="portifolio" class="section-port">
+        <div id="portfolio" class="gapPort"></div>
+        <section class="section-port">
             <div class="container-tt">
                 <h2 class="title-port">PORTFOLIO</h2>
                 <p>You can see some projects and explore them here!</p>
@@ -133,10 +139,8 @@
                 </div>
         </section>
 
-
-
-
-        <section id="skills" class="section-port">
+        <div id="skills"></div>
+        <section class="section-port">
             <div class="container-tt">
                 <h2 class="title-port">SKILLS</h2>
                 <p>These are some of my skills!</p>
